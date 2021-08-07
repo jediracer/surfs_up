@@ -23,7 +23,8 @@
 ## Summary
 - As expected, the low temperatures in December as lower than June.  However, based on the minimal difference between the average and maximum temperatures, I believe an ice cream and surf shop would do well all year-round.
 - To supplement the temperature data I would us the two queies below to collect and summarize the preciptation for June and December.
-	```# Supplemental Query for June precipitation
+	```
+	# Supplemental Query for June precipitation
 	get_june_precip = session.query(Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
 	june_precip = list(np.ravel(get_june_precip))
 	june_precip_df = pd.DataFrame(june_precip,columns=['June_Precipitation'])
