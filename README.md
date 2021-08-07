@@ -1,7 +1,7 @@
 # surfs_up
 
 ## Project Overview
-- To perform weather analysis using the provided SQLite database to determine if a surf and ice cream shop is a sustainable business year-round.
+- To perform weather analysis using the provided SQLite database to determine if a surf and ice cream shop is a sustainable business year-round in Oahu .
 ## Resources
 - Data Sources: 
 	- hawaii.sqlite
@@ -21,8 +21,8 @@
 	    ![December Temps](https://github.com/jediracer/surfs_up/blob/main/images/December%20Temperatures.png)
 
 ## Summary
-- As expected, the low temperatures in December as lower than June.  However, based on the minimal difference between the average and maximum temperatures, I believe an ice cream and surf shop would do well all year-round.
-- To supplement the temperature data I would us the two queies below to collect and summarize the preciptation for June and December.
+- As expected, the low temperatures in December is lower than June.  However, based on the minimal difference between the average and maximum temperatures, I believe an ice cream and surf shop would do well all year round in Oahu.
+- To supplement the temperature data I would use the two queries below to collect and summarize the precipitation for the months June and December.
 	```
 	# Supplemental Query for June precipitation
 	get_june_precip = session.query(Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
